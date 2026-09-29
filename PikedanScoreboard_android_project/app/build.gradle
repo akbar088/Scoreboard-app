@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.pikedan.scoreboard'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.pikedan.scoreboard"
+        minSdk 21          // 安卓 5.0 及以上可用；如需支持 4.4 可改成 19
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
